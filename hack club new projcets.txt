@@ -1,0 +1,57 @@
+﻿Project idea brainstorm:
+
+
+AI
+Problem people have:
+AI plagiarism
+Too slow
+Over explain
+Timing events with friends
+Timing meetings with co-workers
+Buying things online 
+Buying clothes online without knowing size (different standards in different countries)
+Finding new hobbies (tinker for hobbies?)
+Best sitting position
+Stalker / sexual harassment detection -> camera computer vision 
+
+
+
+
+Ideas:
+Website chatbot -> on personal website?
+AI that allows you to explore hobbies
+Ai that deterimines best sitting position from picture of desk
+* Inputs phone picture of desk
+* 3d model of human 
+   * Red parts to show strained muscles
+* 3d model of desk
+* Instructions on how to move body to best suit long term sitting
+
+
+
+
+Ergonomics AI
+1. Phone take picture (android implantation?) 
+   1. Open CV 
+   2. Use YOLO to detect human and desk
+   3. Segmentation to divide human and desk and background
+2. Pose generation:
+   1. PoseNet / OpenPose to detect post
+   2. Outputs json file (?)
+3. AI prediction of strained parts
+   1. ???
+   2. Open source model
+      1. https://github.com/BehnooshParsa/HumanActionRecognition_with_ErgonomicRisk 
+4. Visualization
+   1. Matplotlib human heat map
+      1. Each string in the AI output corresponds to body part
+      2. Also shows percentage of strain
+      3. Matplotlib heat map generation
+5. AI recommendations 
+   1. Insert at risk body parts
+   2. Prompt eng ideal ergonomic positions
+   3. text output recommendations
+6. UI
+   1. HTML + CSS + JS front end
+   2. Flask backend
+   3.
